@@ -1,4 +1,4 @@
-@extends('warga.layouts.vertical', ['title' => 'Starter Page'])
+@extends('admin.layouts.vertical', ['title' => 'Starter Page'])
 
 @section('css')
 
@@ -6,7 +6,7 @@
 
 @section('content')
 
-@include("warga.layouts.shared/page-title", ["subtitle" => "Apps", "title" => "Starter Page"])
+@include("admin.layouts.shared/page-title", ["subtitle" => "Apps", "title" => "Starter Page"])
 
 <h1>test pengajuan surat</h1>
 

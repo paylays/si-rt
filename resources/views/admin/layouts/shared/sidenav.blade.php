@@ -55,6 +55,17 @@
                         </ul>
                     </div>
                 </li>
+
+                <li class="px-3 py-2 text-sm font-medium text-default-400">Lainnya</li>
+
+                <li class="menu-item">
+                    <a class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
+                        href="{{ route('manajemen-pengguna.index') }}">
+                        <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">manage_accounts</i>
+                        <span>Manajemen Pengguna</span>
+                    </a>
+                </li>
+
             </ul>
         </div>
 
