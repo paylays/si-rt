@@ -16,25 +16,41 @@
                 <li class="px-3 py-2 text-sm font-medium text-default-400">Main</li>
 
                 <li class="menu-item">
-                    <a class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
-                        href="{{ route('warga.dashboard') }}">
+                    <a href="{{ route('warga.dashboard') }}"
+                        class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
                         <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">home</i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
-                <li class="px-3 py-2 text-sm font-medium text-default-400">Warga</li>
+                <li class="px-3 py-2 text-sm font-medium text-default-400">Administrasi Surat</li>
+
+                <li class="menu-item">
+                    <a href="{{ route('warga.ajukan-surat.index') }}"
+                        class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
+                        <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">post_add</i>
+                        <span class="menu-text"> Ajukan Surat </span>
+                    </a>
+                </li>
 
                 <li class="menu-item">
                     <a href="#"
                         class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
-                        <i class="i-ph-clipboard-text-duotone text-2xl"></i>
-                        <span class="menu-text"> Starter Pages </span>
+                        <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">history</i>
+                        <span class="menu-text"> Riwayat Pengajuan </span>
                     </a>
                 </li>
+                
+                <li class="px-3 py-2 text-sm font-medium text-default-400">Lainnya</li>
 
-                <li class="px-3 py-2 text-sm font-medium text-default-400">Administrasi Surat</li>
-
+                <li class="menu-item">
+                    <a href="#"
+                        class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
+                        <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">help</i>
+                        <span class="menu-text"> FAQs & Bantuan </span>
+                    </a>
+                </li>
+                
                 <li class="menu-item hs-accordion">
                     <a href="javascript:void(0)"
                         class="hs-accordion-toggle group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">

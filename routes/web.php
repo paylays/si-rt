@@ -8,6 +8,9 @@ use App\Http\Controllers\Auth\RegisterController;
 // Admin
 use App\Http\Controllers\Admin\UserController;
 
+// Warga
+use App\Http\Controllers\PengajuanSuratController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -47,7 +50,12 @@ Route::middleware(['auth', 'role:warga'])->group(function () {
     // tambahkan route lain khusus warga di sini
 
     Route::get('/warga/administrasi', fn () => view('warga.administrasi.index'))->name('warga.administrasi.index');
+
+    Route::get('warga/administrasi-surat/ajukan-surat', [PengajuanSuratController::class, 'index'])->name('warga.ajukan-surat.index');
 });
+
+
+
 
 // Route::group(['prefix' => '/'], function () {
 //     Route::get('', [RoutingController::class, 'index'])->name('root');

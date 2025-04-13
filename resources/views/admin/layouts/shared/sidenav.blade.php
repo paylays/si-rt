@@ -5,7 +5,7 @@
     <div class="flex flex-col h-full">
         <!-- Sidenav Logo -->
         <div class="sticky top-0 flex h-topbar items-center justify-between px-6">
-            <a href="/">
+            <a href="#">
                 <img src="/images/logo-light.png" alt="logo" class="flex h-8">
             </a>
         </div>
@@ -16,20 +16,10 @@
                 <li class="px-3 py-2 text-sm font-medium text-default-400">Main</li>
 
                 <li class="menu-item">
-                    <a class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
-                        href="{{ route('admin.dashboard') }}">
+                    <a href="{{ route('admin.dashboard') }}"
+                        class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
                         <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">home</i>
                         <span>Dashboard</span>
-                    </a>
-                </li>
-
-                <li class="px-3 py-2 text-sm font-medium text-default-400">Warga</li>
-
-                <li class="menu-item">
-                    <a href="#"
-                        class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
-                        <i class="i-ph-clipboard-text-duotone text-2xl"></i>
-                        <span class="menu-text"> Starter Pages </span>
                     </a>
                 </li>
 
@@ -38,8 +28,8 @@
                 <li class="menu-item hs-accordion">
                     <a href="javascript:void(0)"
                         class="hs-accordion-toggle group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">
-                        <i class="i-ph-clipboard-text-duotone text-2xl"></i>
-                        <span class="menu-text"> Starter Pages </span>
+                        <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">drafts</i>
+                        <span class="menu-text"> Pengajuan Surat </span>
                         <span class="menu-arrow"></span>
                     </a>
 
@@ -49,18 +39,80 @@
                                 <a class="flex items-center gap-x-3.5 rounded-md px-3 py-1.5 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
                                     href="#">
                                     <i class="menu-dot"></i>
-                                    Starter Pages
+                                    Permohonan Surat
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mt-1 space-y-1">
+                            <li class="menu-item">
+                                <a class="flex items-center gap-x-3.5 rounded-md px-3 py-1.5 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
+                                    href="#">
+                                    <i class="menu-dot"></i>
+                                    Riwayat Permohonan
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </li>
 
-                <li class="px-3 py-2 text-sm font-medium text-default-400">Lainnya</li>
+                <li class="menu-item hs-accordion">
+                    <a href="javascript:void(0)"
+                        class="hs-accordion-toggle group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">
+                        <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">article</i>
+                        <span class="menu-text"> Manajemen Surat </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+
+                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                        <ul class="mt-1 space-y-1">
+                            <li class="menu-item">
+                                <a class="flex items-center gap-x-3.5 rounded-md px-3 py-1.5 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
+                                    href="#">
+                                    <i class="menu-dot"></i>
+                                    Jenis Surat
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mt-1 space-y-1">
+                            <li class="menu-item">
+                                <a class="flex items-center gap-x-3.5 rounded-md px-3 py-1.5 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
+                                    href="#">
+                                    <i class="menu-dot"></i>
+                                    Template
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="px-3 py-2 text-sm font-medium text-default-400">Warga</li>
+
+                <li class="menu-item hs-accordion">
+                    <a href="javascript:void(0)"
+                        class="hs-accordion-toggle group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5 hs-accordion-active:bg-default-100/5 hs-accordion-active:text-default-100">
+                        <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">groups</i>
+                        <span class="menu-text"> Pendataan Warga </span>
+                        <span class="menu-arrow"></span>
+                    </a>
+
+                    <div class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300">
+                        <ul class="mt-1 space-y-1">
+                            <li class="menu-item">
+                                <a class="flex items-center gap-x-3.5 rounded-md px-3 py-1.5 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
+                                    href="#">
+                                    <i class="menu-dot"></i>
+                                    Data Warga
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="px-3 py-2 text-sm font-medium text-default-400">Pengaturan</li>
 
                 <li class="menu-item">
-                    <a class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5"
-                        href="{{ route('manajemen-pengguna.index') }}">
+                    <a href="{{ route('manajemen-pengguna.index') }}"
+                        class="group flex items-center gap-x-3.5 rounded-md px-3 py-2 text-sm font-medium text-default-100 transition-all hover:bg-default-100/5">
                         <i class="material-symbols-rounded text-2xl transition-all hover:fill-1">manage_accounts</i>
                         <span>Manajemen Pengguna</span>
                     </a>
