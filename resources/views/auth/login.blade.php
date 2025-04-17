@@ -20,8 +20,6 @@
     <section class="bg-white">
         <div class="flex items-center justify-center px-4 py-7 bg-white sm:px-6 lg:px-8 sm:py-16 lg:py-24">
             <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-                <a href="#"
-                    class="text-3xl font-bold text-gray-900 mb-6 block first-letter:text-sky-500">Authero</a>
                 <h2 class="text-2xl font-bold leading-tight text-black">Sign In</h2>
                 <p class="mt-2 text-base text-gray-600">Don't have an account ? <a href="{{ route('register') }}" title=""
                         class="font-medium text-sky-600 transition-all duration-200 hover:text-sky-700 focus:text-sky-700 hover:underline">Sign

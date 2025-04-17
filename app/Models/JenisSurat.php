@@ -11,6 +11,10 @@ class JenisSurat extends Model
 
     protected $fillable = ['nama_surat', 'deskripsi'];
 
+    public function suratPengajuans() {
+        return $this->hasMany(SuratPengajuan::class);
+    }
+
     public function pengajuanSurat()
     {
         return $this->hasMany(PengajuanSurat::class);
