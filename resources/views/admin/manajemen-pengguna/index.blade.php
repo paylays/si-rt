@@ -6,7 +6,7 @@
 
 @section('content')
 
-@include("admin.layouts.shared/page-title", ["subtitle" => "Lainnya", "title" => "Manajemen"])
+@include("admin.layouts.shared/page-title", ["subtitle" => "Lainnya", "title" => "Manajemen Pengguna"])
 
 <div class="grid xl:grid-cols-3 md:grid-cols-2 gap-5 mb-5">
     <div class="lg:col-span-2">
